@@ -1,10 +1,14 @@
-import React from 'react'
-import {BrowserRouter as Router,Switch,Route,Redirect} from 'react-router-dom';
-import { Navbar } from './app/Navbar';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import { Navbar } from "./components/Navbar";
 import "./App.css";
 
-import Home from './app/features/home/Home';
-import Test from './Test';
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -12,18 +16,21 @@ function App() {
       <Navbar />
       <div className="App">
         <Switch>
-          <Route exact path="/" render={() => (
+          <Route
+            exact
+            path="/"
+            render={() => (
               <React.Fragment>
-                <Home />
+                <HomePage />
               </React.Fragment>
             )}
           />
-          <Route exact path="/test" component={Test} />
+          {/* <Route exact path="/test" component={Test} /> */}
           <Redirect to="/" />
         </Switch>
       </div>
     </Router>
-  )
+  );
 }
 
 export default App;
