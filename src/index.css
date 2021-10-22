@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+
+/*----------------------item--------------------------*/
+.item{
+  display: inline-block;
+  width: 281px;
+  text-align: center;
+
+  margin:30px 20px;
+
+  border: 1px solid;
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.item h1{
+  font-size:20px;
+
+}
+
+.item img{
+  width: 100%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.item_body{
+  margin: 0;
+  padding: 5px;
+  font-size:15px;
+  border-bottom: 1px solid black;
+}
+.item_price{
+  width:140px;
+  float:left;
+  border-right: 1px solid;
+}
+.ingredients{
+  margin: 0;
+  padding: 5px;
+  font-size:13px;
+  border-top: 1px solid black;
+  color:rgb(158, 156, 147)
+}
+
+
+/*----------------------------------------------------*/
