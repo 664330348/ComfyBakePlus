@@ -10,6 +10,7 @@ import "./App.css";
 
 import HomePage from "./pages/HomePage";
 import Shop from "./pages/shop/ShopPage";
+import ShoppingCart from "./pages/cart/ShoppingCartPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             )}
           />
           <Route exact path="/Shop" component={Shop} />
+          <Route exact path="/ShoppingCart" component={ShoppingCart} />
           <Redirect to="/" />
         </Switch>
       </div>

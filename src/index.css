@@ -62,4 +62,68 @@ code {
 }
 
 
-/*----------------------------------------------------*/
+/*----------------------ShoppingCartItem-----------------------*/
+
+.ShoppingCartItem{
+  width:80%;
+  min-width:500px;
+  margin: 20px 10%;
+
+  overflow: hidden;
+  border:2px solid;
+  border-radius: 15px;
+}
+.ShoppingCartItem h1{
+  width:100%;
+  font-size:large;
+  text-align:center;
+}
+.ShoppingCartItem-ImgBox{
+  float:left;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+
+  width:calc(50% - 6px);
+  height:200px;
+  padding: 3px;
+  overflow:hidden;
+}
+.ShoppingCartItem-ImgBox img{
+  position:relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+.ShoppingCartItem-Control{
+  float:right;
+  line-height:66px;
+  width:calc(50% - 6px);
+  height:200px;
+  padding: 3px;
+  overflow:hidden;
+  text-align:center;
+}
+.ShoppingCartItem-Control p{
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgb(86, 83, 255);
+}
+.ShoppingCartItem-Control div{
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  border-bottom: 1px solid rgb(86, 83, 255);
+}
+.ShoppingCartItem-Control div button{
+  margin: 0 13px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size:18px;
+}
+.ShoppingCartItem-RemoveButton{
+  margin: 0 13px;
+  background: none;
+  cursor: pointer;
+  font-size:13px;
+}

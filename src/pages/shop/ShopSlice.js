@@ -1,22 +1,46 @@
 import { createSlice } from '@reduxjs/toolkit'
-
+import img001 from '../../images/img001.png';
+import img002 from '../../images/img002.png';
+import img003 from '../../images/img003.png';
+import img004 from '../../images/img004.png';
+import img005 from '../../images/img005.png';
+import img006 from '../../images/img006.png';
+import img007 from '../../images/img007.png';
+import img008 from '../../images/img008.png';
 
 const initialState = [
-    {id: '0', name:'mini cherry bakewell tarts', img:'https://firebasestorage.googleapis.com/v0/b/comfybakeplus.appspot.com/o/img001.png?alt=media&token=0aa4e4f1-6be8-4371-9a94-5b4280d1422d', 
+    {id: '1', name:'Mini Cherry Bakewell Tarts', img:img001, 
         body:'A British classic goes bite-sized in these adorable mini tarts filled with jam and frangipane and covered with a snowy white icing.', 
         ingredients:'all-purpose flour, cold butter, egg yolks', 
         price: 3.99, left: 10}, 
-    {id: '1', name:'Maple Sugar Scrolls', img:'https://firebasestorage.googleapis.com/v0/b/comfybakeplus.appspot.com/o/img002.png?alt=media&token=af671800-1320-41e1-a794-bceb55e2af8b', 
+    {id: '2', name:'Maple Sugar Scrolls', img:img002, 
         body:'These soft, fluffy buns swap out the usual cinnamon for the delicate sweetness of maple sugar.', 
         ingredients:'milk, eggs, maple sugar, vanilla extract', 
         price: 5.99, left: 15}, 
-    {id: '2', name:'Blood Orange Canneles', img:'https://firebasestorage.googleapis.com/v0/b/comfybakeplus.appspot.com/o/img003.png?alt=media&token=2a1fd952-3d56-406d-b47e-41d2ae9bffcc', 
+    {id: '3', name:'Blood Orange Canneles', img:img003, 
         body:'This twist on the traditional French cannelé gets its sweet, citrusy flavour from a combination of blood orange zest and orange liqueur.', 
         ingredients:'whole milk, egg yolk, blood orange, unsalted butter', 
         price: 1.99, left: 5}, 
-    {id: '3', name:'Peanut Butter Nanaimo Bars', img:'https://firebasestorage.googleapis.com/v0/b/comfybakeplus.appspot.com/o/img004.png?alt=media&token=b15e41dc-a8dc-4b44-bf74-9a7d398b32e7', 
+    {id: '4', name:'Peanut Butter Nanaimo Bars', img:img004, 
         body:'The classic Nanaimo bar gets an upgrade with a sweet, smooth peanut butter filling.', 
         ingredients:'sugar, cocoa, chocolate wafer crumbs, graham cracker crumbs', 
+        price: 4.99, left: 20}, 
+
+    {id: '5', name:'Fresh Raspberry Custard Tarts', img:img005, 
+        body:'These elegant little tarts pair a buttery shortcrust pastry base with a buttermilk custard filling.', 
+        ingredients:'all-purpose flour, eggs, fresh raspberries, whipping cream', 
+        price: 3.99, left: 10}, 
+    {id: '6', name:'Peanut Butter and Jelly Thumbprints', img:img006, 
+        body:'These pretty little thumbprint cookies pack all of the goodness of an old-school PB&J sandwich.', 
+        ingredients:'baking soda, baking powder, eggs, creamy peanut butter, grape jelly', 
+        price: 5.99, left: 15}, 
+    {id: '7', name:'Savoury Cheddar Coins', img:img007, 
+        body:'This cheesy twist on the classic icebox cookie is perfect for the holidays.', 
+        ingredients:'whole milk, egg yolk, blood orange, unsalted butter', 
+        price: 1.99, left: 5}, 
+    {id: '8', name:'Pumpkin Cheesecake Swirl Brownies', img:img008, 
+        body:"It's tough having to choose between fudgey brownies and tangy pumpkin cheesecake.", 
+        ingredients:'unsweetened chocolate, eggs, pumpkin puree, brown sugar', 
         price: 4.99, left: 20}, 
 ]
 
