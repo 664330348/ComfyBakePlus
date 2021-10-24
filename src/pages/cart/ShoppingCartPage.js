@@ -1,11 +1,10 @@
 import {useSelector} from 'react-redux';
-import {selectShoppingCart} from './ShoppingCartSlice';
-
+import {selectShoppingCartContains,selectShoppingCartTotal} from './ShoppingCartSlice';
 import ShoppingCartItem from '../../components/ShoppingCartItem';
 
 function ShoppingCart() {
-    const items = useSelector(selectShoppingCart)
-
+    const items = useSelector(selectShoppingCartContains)
+    const total = useSelector(selectShoppingCartTotal)
     const eachItems = items.map(item =>(
         <ShoppingCartItem key = {item.id}
             id = {item.id}
@@ -15,7 +14,16 @@ function ShoppingCart() {
             amount = {item.amount}
         />
     )) 
-    return (<div>{eachItems}</div>);
+    return (
+        <div>
+            <div>
+                {eachItems}
+            </div>
+            <div> 
+                Payment Amount: $ {total} 
+            </div>
+        </div>
+    );
 }
   
 export default ShoppingCart;

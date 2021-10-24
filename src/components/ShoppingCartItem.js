@@ -16,12 +16,12 @@ export default function ShoppingCartItem (props){
             <div className="ShoppingCartItem-Control">
                 <p> $ {price} / each </p>
                 <div>
-                    <button onClick={()=>{dispatch(ItemDecreses(id))}}> {"<"} </button>
+                    <button onClick={()=>{dispatch(ItemDecreses({id:id, price:price}))}}> {"<"} </button>
                     {amount}
-                    <button onClick={()=>{dispatch(ItemIncreses(id))}}> {">"} </button><br/>
+                    <button onClick={()=>{dispatch(ItemIncreses({id:id, price:price}))}}> {">"} </button><br/>
                 </div>
                  Total: ${Math.round(price*amount *100) /100 }
-                <button className="ShoppingCartItem-RemoveButton" onClick={()=>{dispatch(ItemRemove(id))}}> Remove </button>
+                <button className="ShoppingCartItem-RemoveButton" onClick={()=>{dispatch(ItemRemove({id:id, price:price, amount:amount}))}}> Remove </button>
             </div>
         </div>
     )

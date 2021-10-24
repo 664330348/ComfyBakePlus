@@ -27,7 +27,7 @@ function App() {
               </React.Fragment>
             )}
           />
-          <Route exact path="/Shop" component={Shop} />
+         {/*  <Route exact path="/Shop" component={Shop} /> */}
           <Route exact path="/ShoppingCart" component={ShoppingCart} />
           <Redirect to="/" />
         </Switch>

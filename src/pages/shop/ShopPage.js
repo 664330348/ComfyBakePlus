@@ -17,6 +17,7 @@ function Shop() {
         </article> */
         
         <Item key = {item.id}
+        id = {item.id}
         name  = {item.name}
         img = {item.img}
         body = {item.body}

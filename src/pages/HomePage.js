@@ -1,5 +1,9 @@
+
+import Shop from './shop/ShopPage';
+
 function Home() {
-  return <div>Home Page </div>;
+  
+  return (<Shop/>);
 }
 
 export default Home;

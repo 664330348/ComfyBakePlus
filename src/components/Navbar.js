@@ -1,7 +1,11 @@
 import React from "react";
+import {useSelector} from 'react-redux';
 import { Link } from "react-router-dom";
+import {selectShoppingCartContains} from '../pages/cart/ShoppingCartSlice';
 
 export const Navbar = () => {
+  const items = useSelector(selectShoppingCartContains)
+
   return (
     <nav>
       <section>
@@ -12,8 +16,8 @@ export const Navbar = () => {
 
           <div className="navLinks">
             <Link to="/">Home</Link>
-            <Link to="/Shop">Shop</Link>
-            <Link to="/ShoppingCart">Cart</Link>
+            {/* <Link to="/Shop">Shop</Link> */}
+            <Link to="/ShoppingCart">Cart {items.length}</Link>
           </div>
         </div>
       </section>
