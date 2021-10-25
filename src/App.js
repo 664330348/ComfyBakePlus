@@ -9,8 +9,9 @@ import { Navbar } from "./components/Navbar";
 import "./App.css";
 
 import HomePage from "./pages/HomePage";
-import Shop from "./pages/shop/ShopPage";
+/* import Shop from "./pages/shop/ShopPage";*/
 import ShoppingCart from "./pages/cart/ShoppingCartPage";
+import Order from "./pages/orders/OrdersPage";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               </React.Fragment>
             )}
           />
-         {/*  <Route exact path="/Shop" component={Shop} /> */}
+          <Route exact path="/Orders" component={Order} />
           <Route exact path="/ShoppingCart" component={ShoppingCart} />
           <Redirect to="/" />
         </Switch>
