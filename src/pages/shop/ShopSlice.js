@@ -47,9 +47,13 @@ const initialState = [
 const ShopSlice = createSlice({
     name: 'shop',
     initialState,
-    reducers: {}
+    reducers: {
+        ShopItemDecreses (state, action){
+           state.find(item => item.id === action.payload.id).left -= action.payload.amount;
+        }
+    }
 })
-  
+export const {ShopItemDecreses} = ShopSlice.actions;
 export const selectShop = (state) => state.shop;
 
 export default ShopSlice.reducer
