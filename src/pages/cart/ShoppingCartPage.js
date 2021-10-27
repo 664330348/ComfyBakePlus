@@ -44,6 +44,7 @@ function ShoppingCart() {
             <div>
                 {eachItems}
             </div>
+            <div className="EmptyBox"></div>
             <div className="CheckoutBox"> 
                 Payment Amount: $ {CartItemstotal} 
                 <button onClick={Checkout}> Checkout </button>

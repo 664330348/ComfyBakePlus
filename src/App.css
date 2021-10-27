@@ -1,34 +1,68 @@
 .navContent {
   padding: 0;
+  min-width: 300px;
   width: 100%;
-  height: 40px;
-  background-color: cornflowerblue;
+  height: 50px;
 }
 
 .Logo{
   float: left;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width:15%;
-  height:100%;
-  background-color: chartreuse;
+  width: 150px;
+  height:50px;
 }
-
+.Logo img{
+  min-width:80px;
+  height: 50px;
+}
 .navLinks{
-  display: flex;
-  justify-content: space-between;
+  float: right;
+  display: inline-flex;
+  justify-content: flex-end;
   align-items: center;
-  
-  padding:0% 2.5%;
-  width:80%;
-  height:100%;
-  background-color:rgb(252, 185, 161);
+  min-width:200px;
+  width:calc(100vw - 170px);
+  height:50px;
+  background-color: rgb(51, 47, 47);
 }
-.navLinks a{
+.Links{
+  text-align:center;
+  line-height:25px;
+  margin: 0 20px;
   width: 50px;
   height: 30px;
-
-  background-color:darkseagreen;
+  background-color:white;
+  color: black;
   border: 1px solid;
+  border-radius: 9px;
+  text-decoration:none;
+}
+
+.Links:hover{
+  background-color:rgb(131, 127, 119);
+  color:white;
+}
+
+.shappingCart{
+  text-align:center;
+  line-height:15px;
+  font-size:13px;
+  margin: 0 20px;
+  width: 50px;
+  height: 30px;
+  background-color:white;
+  color: rgb(126, 110, 110);
+  border: 1px solid black;
+  border-radius: 9px;
+  text-decoration:none;
+  
+  background: url("./images/ShappingCart001.png") no-repeat;
+  background-color: white;
+  background-size: 80% 70%;
+  background-position: bottom;
+}
+.shappingCart:hover{
+  opacity:0.5;
 }

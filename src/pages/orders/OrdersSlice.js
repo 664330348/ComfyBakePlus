@@ -16,13 +16,13 @@ const Orders = createSlice({
         OrdersAdded (state, action){
             const existOrder = state.find(item => item.id === action.payload.id)
             if (existOrder){
-                existOrder.total += (Math.round(action.payload.item_.price * action.payload.item_.amount *100)/100)
+                existOrder.total = Math.round((existOrder.total + action.payload.item_.price * action.payload.item_.amount) *100)/100
                 existOrder.contains.push(action.payload.item_)
             }else{ 
                 state.push({
                     id: action.payload.id,
                     date: action.payload.date,
-                    total: (Math.round(action.payload.item_.price * action.payload.item_.amount *100)/100),
+                    total: (Math.round(action.payload.item_.price * action.payload.item_.amount *100))/100,
                     contains: [action.payload.item_]
                 })
             }
