@@ -13,21 +13,26 @@ code {
 }
 
 
-
+.ShopPage{
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width:100%;
+}
 
 
 
 /*----------------------item--------------------------*/
 .item{
-  display: inline-block;
+ /*  display: inline-block; */
   width: 281px;
   text-align: center;
-
-  margin:30px 20px;
+  
+  margin:30px 15px;
 
   border: 1px solid;
 
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 10px;
 }
 

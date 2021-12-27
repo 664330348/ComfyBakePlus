@@ -3,7 +3,7 @@ import Shop from './shop/ShopPage';
 
 function Home() {
   
-  return (<Shop/>);
+  return (<div><Shop/></div>);
 }
 
 export default Home;

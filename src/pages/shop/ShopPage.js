@@ -17,7 +17,7 @@ function Shop() {
         left = {item.left}
         />
     )) 
-    return (<div>{eachItems}</div>);
+    return (<div className="ShopPage">{eachItems}</div>);
 }
   
 export default Shop;
